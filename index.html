@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        primary: {
+                            50: '#FFF8F0',
+                            100: '#FFEEDD',
+                            200: '#FFD5A8',
+                            300: '#FFB161',
+                            400: '#FF8E3D',
+                            500: '#FF6B00',
+                            600: '#E05E00',
+                            700: '#B84D00',
+                            800: '#903C00',
+                            900: '#682B00'
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-sans bg-white overflow-x-hidden">
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm header">
+        <div class="container mx-auto px-6 py-4 md:px-8 lg:px-14">
+            <div class="flex justify-between items-center">
+                <div class="text-3xl font-bold text-primary-600 font-display tracking-tight">Savory Bites</div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#"
+                        class="relative text-gray-800 hover:text-primary-600 transition-colors duration-200 font-medium group">
+                        <span>Menu</span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#"
+                        class="relative text-gray-800 hover:text-primary-600 transition-colors duration-200 font-medium group">
+                        <span>About</span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#"
+                        class="relative text-gray-800 hover:text-primary-600 transition-colors duration-200 font-medium group">
+                        <span>Reservations</span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#"
+                        class="relative text-gray-800 hover:text-primary-600 transition-colors duration-200 font-medium group">
+                        <span>Contact</span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <button class="md:hidden text-gray-800 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="min-h-screen pt-32 pb-20 md:pt-40 lg:pt-32 px-6 md:px-8 lg:px-14">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="mb-8">
+                            <span
+                                class="inline-block px-4 py-2 bg-primary-100 text-primary-600 rounded-full font-medium mb-4 SmallTitle">
+                                Est. 2023
+                            </span>
+                            <h1
+                                class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight font-display Title">
+                                <span class="text-primary-600">Artisanal</span> Dining Experience
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-8 max-w-lg leading-relaxed Subtitle">
+                                Where passion meets the plate. Our chef-curated menu celebrates seasonal ingredients
+                                with innovative techniques.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 btns">
+                            <button
+                                class="bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-medium flex items-center gap-2">
+                                <span>View Menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button
+                                class="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg hover:bg-primary-50 transition-all duration-300 font-medium flex items-center gap-2">
+                                <span>Reserve Table</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 mt-12 lg:mt-0 z-40 image">
+                        <div class="relative group">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                                alt="Gourmet dish"
+                                class="relative rounded-2xl shadow-2xl w-full h-auto object-cover h-auto transform group-hover:-translate-y-2 transition duration-500">
+                            <div
+                                class="absolute -bottom-6 -right-6 bg-white px-6 py-4 rounded-xl shadow-lg border border-gray-100 hidden lg:block">
+                                <div class="flex items-center gap-3">
+                                    <div class="h-12 w-12 bg-primary-100 rounded-full flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900">Chef's Special</p>
+                                        <p class="text-sm text-gray-600">Seasonal ingredients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let tl = gsap.timeline();
+
+        tl.from(".image", { x: 150, opacity: 0, duration: 2, ease: "power2.inOut" })
+            .from(".SmallTitle", { y: 50, opacity: 0, duration: 1, ease: "power2.inOut" })
+            .from(".Title", { y: 50, opacity: 0, duration: 1, ease: "power2.inOut" })
+            .from(".Subtitle", { y: 50, opacity: 0, duration: 1, ease: "power2.inOut" })
+            .from(".btns", { y: 50, opacity: 0, duration: 1, ease: "power2.inOut" })
+
+    </script>
+</body>
+
+</html>
